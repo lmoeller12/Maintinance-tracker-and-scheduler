@@ -11,7 +11,7 @@ const pass = document.getElementById('password').value;
 const err = document.getElementById('errorMsg');
 
 if (user === VALID_USERNAME && pass === VALID_PASSWORD) {
-window.location.href = '/home.html';
+window.location.href = './home.html';
 return false;
 } else {
 err.classList.add('visible');
