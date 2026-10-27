@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Home</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <span>WorkSpace</span>
+            </div>
+
+            <nav class="navigation">
+                <p class="nav-heading">MAIN MENU</p>
+
+                <a href="index.html" class="nav-link active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <a href="tickets.html" class="nav-link">
+                    <i class="fa-solid fa-ticket"></i>
+                    <span>Tickets</span>
+                </a>
+
+                <a href="schedule.html" class="nav-link">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>Schedule</span>
+                </a>
+
+                <a href="properties.html" class="nav-link">
+                    <i class="fa-solid fa-building"></i>
+                    <span>Properties</span>
+                </a>
+
+                <a href="inventory.html" class="nav-link">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <span>Inventory</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="help-card">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <div>
+                        <strong>Need help?</strong>
+                        <p>Contact your administrator.</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Top Header -->
+            <header class="topbar">
+                <div class="breadcrumb">
+                    <span>Workspace</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <strong>Home</strong>
+                </div>
+
+                <div class="topbar-actions">
+                    <a href="messages.html"
+                       class="header-icon"
+                       aria-label="Messages">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </a>
+
+                    <a href="profile.html" class="profile-link"
+                       aria-label="Go to profile">
+                        <div class="avatar">JD</div>
+                        <div class="profile-info">
+                            <strong>John Doe</strong>
+                            <span>Administrator</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-down profile-chevron"></i>
+                    </a>
+                </div>
+            </header>
+
+            <!-- Page Heading -->
+            <section class="welcome-section">
+                <div>
+                    <p class="eyebrow">YOUR WORKSPACE</p>
+                    <h1>Welcome back, John!</h1>
+                    <p class="welcome-subtitle">
+                        Here's what's happening with your workspace today.
+                    </p>
+                </div>
+
+                <a href="tickets.html" class="primary-button">
+                    <i class="fa-solid fa-plus"></i>
+                    Create Ticket
+                </a>
+            </section>
+
+            <!-- Overview Cards -->
+            <section class="overview-grid">
+
+                <div class="overview-card">
+                    <div class="overview-icon purple">
+                        <i class="fa-solid fa-ticket"></i>
+                    </div>
+                    <div>
+                        <p>Open Tickets</p>
+                        <h2>--</h2>
+                        <span>Ticket overview placeholder</span>
+                    </div>
+                </div>
+
+                <div class="overview-card">
+                    <div class="overview-icon blue">
+                        <i class="fa-regular fa-calendar-check"></i>
+                    </div>
+                    <div>
+                        <p>Upcoming Events</p>
+                        <h2>--</h2>
+                        <span>Schedule placeholder</span>
+                    </div>
+                </div>
+
+                <div class="overview-card">
+                    <div class="overview-icon green">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <div>
+                        <p>Properties</p>
+                        <h2>--</h2>
+                        <span>Property overview placeholder</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Main Dashboard Panels -->
+            <section class="dashboard-grid">
+
+                <!-- To-Do List -->
+                <div class="panel todo-panel">
+                    <div class="panel-header">
+                        <div>
+                            <h2>My To-Do List</h2>
+                            <p>Keep track of your daily tasks.</p>
+                        </div>
+
+                        <button class="icon-button"
+                                aria-label="More task options">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+                    </div>
+
+                    <div class="todo-placeholder">
+                        <div class="empty-icon">
+                            <i class="fa-regular fa-clipboard"></i>
+                        </div>
+                        <h3>Your tasks will appear here</h3>
+                        <p>
+                            Use this space to organize tasks, track progress,
+                            and stay on top of your work.
+                        </p>
+                        <a href="tasks.html" class="secondary-button">
+                            View All Tasks
+                        </a>
+                    </div>
+
+                    <!-- Example task layout for future use -->
+                    <!--
+                    <div class="todo-item">
+                        <input type="checkbox" id="task1">
+                        <label for="task1">
+                            <strong>Review maintenance request</strong>
+                            <span>Due today</span>
+                        </label>
+                    </div>
+                    -->
+                </div>
+
+                <!-- Messages Quick Access -->
+                <div class="panel messages-panel">
+                    <div class="panel-header">
+                        <div>
+                            <h2>Messages</h2>
+                            <p>Your latest conversations.</p>
+                        </div>
+
+                        <a href="messages.html" class="view-all">
+                            View all
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="message-list">
+
+                        <!-- Example new message -->
+                        <a href="messages.html" class="message-item">
+                            <div class="message-avatar avatar-purple">AM</div>
+
+                            <div class="message-content">
+                                <div class="message-topline">
+                                    <strong>Alex Morgan</strong>
+                                    <span class="message-time">10:42 AM</span>
+                                </div>
+                                <p>There is an update on the latest ticket...</p>
+                                <span class="unread-label">
+                                    <span class="unread-dot"></span>
+                                    New message
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="messages.html" class="message-item">
+                            <div class="message-avatar avatar-blue">TS</div>
+
+                            <div class="message-content">
+                                <div class="message-topline">
+                                    <strong>Taylor Smith</strong>
+                                    <span class="message-time">Yesterday</span>
+                                </div>
+                                <p>Can we review the property schedule?</p>
+                                <span class="unread-label">
+                                    <span class="unread-dot"></span>
+                                    New message
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="messages.html" class="message-item">
+                            <div class="message-avatar avatar-orange">RJ</div>
+
+                            <div class="message-content">
+                                <div class="message-topline">
+                                    <strong>Ryan Johnson</strong>
+                                    <span class="message-time">Yesterday</span>
+                                </div>
+                                <p>The inventory report is ready for review.</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <a href="messages.html" class="messages-footer">
+                        Open message center
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </section>
+
+            <!-- Bottom Section -->
+            <section class="panel activity-panel">
+                <div class="panel-header">
+                    <div>
+                        <h2>Recent Activity</h2>
+                        <p>Stay up to date with workspace activity.</p>
+                    </div>
+                </div>
+
+                <div class="activity-placeholder">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Recent activity will appear here.</span>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <span>&copy; 2026 WorkSpace. All rights reserved.</span>
+                <span>Dashboard</span>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
